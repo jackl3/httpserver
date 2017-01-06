@@ -9,4 +9,4 @@ RUN keytool -genkey -alias tomcat -keyalg RSA  -storepass IdKomucFad1 -keypass I
 VOLUME /usr/local/tomcat/webapps
 WORKDIR /usr/local/tomcat/bin
 EXPOSE 8080 8443
-CMD catalina.sh stop && catalina.sh run
+CMD ["catalina.sh", "run"]
